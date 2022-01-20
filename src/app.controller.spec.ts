@@ -1,8 +1,9 @@
+import 'reflect-metadata';
 import { Test, TestingModule } from '@nestjs/testing';
-import { Expose, plainToClass } from 'class-transformer';
+import { Expose, plainToInstance } from 'class-transformer';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import 'reflect-metadata';
+
 class TestDto {
   @Expose({ name: 'name' })
   public name!: string;
@@ -26,7 +27,7 @@ describe('AppController', () => {
     });
 
     it('should return dto', () => {
-      expect(plainToClass(TestDto, { name: 'hi' })).toBe({ name: 'hi' });
+      expect(plainToInstance(TestDto, { name: 'hi' })).toEqual({ name: 'hi' });
     });
   });
 });
