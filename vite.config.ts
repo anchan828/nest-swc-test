@@ -1,7 +1,5 @@
-import { defineConfig } from 'vite';
 import { VitePluginNode } from 'vite-plugin-node';
-
-
+import { configDefaults, defineConfig } from 'vitest/config';
 
 export default defineConfig({
   esbuild: false,
@@ -52,6 +50,7 @@ export default defineConfig({
           target: 'es2021',
           parser: {
             syntax: 'typescript',
+            tsx: false,
             decorators: true,
             dynamicImport: true,
           },
@@ -84,6 +83,7 @@ export default defineConfig({
       statements: 100,
       functions: 100,
       lines: 100,
+      exclude: configDefaults.include,
     },
     environment: 'node',
   },
