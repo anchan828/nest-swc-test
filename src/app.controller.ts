@@ -1,7 +1,5 @@
 import { Controller, Get } from '@nestjs/common';
-import { Expose } from 'class-transformer';
 import { AppService } from './app.service';
-
 
 @Controller()
 export class AppController {
