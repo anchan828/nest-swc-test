@@ -9,7 +9,6 @@ export default defineConfig({
     port: 3000,
   },
   plugins: [
-    // RollupPluginSwc(),
     ...VitePluginNode({
       // Nodejs native Request adapter
       // currently this plugin support 'express', 'nest', 'koa' and 'fastify' out of box,
@@ -84,6 +83,7 @@ export default defineConfig({
       functions: 100,
       lines: 100,
       exclude: configDefaults.include,
+      reporter: ['text', 'lcov'],
     },
     environment: 'node',
   },

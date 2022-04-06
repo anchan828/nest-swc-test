@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
+    "module": "esnext",
+    "moduleResolution": "node",
     "declaration": true,
     "removeComments": true,
     "emitDecoratorMetadata": true,
@@ -15,6 +16,6 @@
     "lib": [
       "ESNext"
     ],
-    "types": ["vitest/globals"]
+    "types": ["vite/client", "vitest/globals"]
   }
 }
