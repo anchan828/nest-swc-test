@@ -1,5 +1,6 @@
 import { VitePluginNode } from 'vite-plugin-node';
-import { configDefaults, defineConfig } from 'vitest/config';
+import { configDefaults } from 'vitest/config';
+import { defineConfig } from 'vite';
 
 export default defineConfig({
   esbuild: false,
