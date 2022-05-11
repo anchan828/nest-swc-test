@@ -60,7 +60,6 @@ export default defineConfig({
           },
         },
         sourceMaps: true,
-        inlineSourcesContent: true,
       },
     }),
   ],
