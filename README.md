@@ -26,3 +26,8 @@ All files          |     100 |       75 |     100 |     100 |
 ```
 
 ![](https://t.gyazo.com/teams/unity/213e3b7560d1ed2aaa27476b840e597a.png)
+
+
+## Issues
+
+https://github.com/swc-project/swc/issues/3854
