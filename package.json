@@ -30,6 +30,7 @@
   },
   "devDependencies": {
     "@nestjs/cli": "^8.2.6",
+    "@nestjs/platform-fastify": "^8.4.6",
     "@nestjs/schematics": "^8.0.11",
     "@nestjs/testing": "^8.4.6",
     "@swc/core": "^1.2.196",

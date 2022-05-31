@@ -73,6 +73,8 @@ export default defineConfig({
       'class-transformer',
       'class-validator',
       'fastify-swagger',
+      'fastify-static',
+      'point-of-view',
     ],
   },
   test: {
